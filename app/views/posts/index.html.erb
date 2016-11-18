@@ -6,21 +6,20 @@
 		<h4>Articles</h4>
 	</div>
 
-	<div class="post">
-		<% @posts.each do |post| %>
+	<% @posts.each do |post| %>
+		<div class="post">
 			<h6 class="date"><%= post.created_at.strftime("%A, %d %B %Y") %></h6>
 			<h2><%= link_to post.title, post %></h2>
 			<p><%= post.description %></p>
 			<hr>
-		<% end %>
-	</div>
+		</div>
+	<% end %>
+
 
 	<div class="pagination">
-		<span class="previous_page disabled">Previous</span>
-		<em class="current">1</em>
-		<a rel="next" href="#">2</a>
-		<a class="next_page" href="#">Next</a>
+		<%= will_paginate @posts %>
 	</div>
+
 
 </div>
 

@@ -104,8 +104,9 @@ $gutter: 30px;
 
 .pagination {
 	text-align: center;
+
 	a, .previous_page, .current, .next-page {
-		color: $light;
+		color: $dark;
 		font-weight: 300;
 		font-size: 12px;
 		padding: 5px 10px;
@@ -124,9 +125,13 @@ $gutter: 30px;
 	}
 
 	.disabled {
-		color: $text;
+		color: $grey;
+		font-weight: 300;
+		font-size: 12px;
+		padding: 5px 10px;
+		margin: 3px;		
 		&:hover {
-			color: $text;
+			color: $grey;
 			background: white;
 		} 
 	}
