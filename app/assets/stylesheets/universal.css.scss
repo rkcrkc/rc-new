@@ -1,0 +1,73 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+$red: #FD6B57;
+$faint: #D8E9EF;
+$light: #8283a7;
+$blue: #4ea1d3;
+$dark: #54546c;
+$green: #67D5B5;
+$text: #404146;
+
+$gutter: 30px;
+
+.clear {
+	clear: both;
+}
+
+h1 {
+	color: $dark;
+	font-weight: 400;
+}
+
+h2 {
+	color: $dark;
+	font-weight: 400;
+}
+
+h3 {
+	color: $dark;
+}
+
+h5 {
+	color: $light;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: $gutter/2;
+}
+
+h6 {
+
+}
+
+p {
+	color: $text;
+	font-weight: 300;
+}
+
+a {
+	color: $light;
+	font-weight: 300;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $dark;
+	}
+}
+
+hr {
+	width: 3em;
+	display: block;
+	border: 0;
+	border-top: 5px solid $green;
+	margin: 4rem auto;	
+}
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}

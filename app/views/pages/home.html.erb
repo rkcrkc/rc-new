@@ -1,0 +1,20 @@
+<%= render 'home_hero' %>
+
+<div class="page-content">
+	<%= render 'home_intro' %>
+	<%= render 'home_longterm' %>
+	<%= render 'home_medterm' %>
+	<%= render 'home_daily' %>
+	<%= render 'home_background' %>
+	<%= render 'home_contact' %>	
+</div>
+
+<%= render 'pages_footer' %>
+
+<script>
+	$( document ).ready(function() {
+	  $('[data-toggle="popover"]').popover();
+	  $('[data-toggle="collapse"]').collapse();	  
+	  $('[data-toggle="tooltip"]').tooltip();	  	  
+	});
+</script>

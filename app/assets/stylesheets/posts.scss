@@ -1,0 +1,103 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$red: #FD6B57;
+$faint: #D8E9EF;
+$light: #8283a7;
+$blue: #4ea1d3;
+$dark: #54546c;
+$text: #404146;
+$green: #67D5B5;
+
+$gutter: 30px;
+
+
+.posts-container {
+	padding: $gutter/2;
+	text-align: center;
+	margin: 0 auto;	
+	max-width: 800px;
+}
+
+.posts-index {
+
+	h4 {
+		color: $dark;
+		font-weight: 400;
+		text-transform: uppercase;
+	}	
+
+}
+
+.post {
+	margin-top: $gutter*1.5;
+	margin-bottom: $gutter;
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: $gutter/2;
+	}
+
+	a {
+		font-weight: 400;
+		color: $dark;
+		&:hover, &:focus {
+			color: $light;
+		}
+	}
+
+	p {
+		color: $dark;
+	}
+
+}
+
+.date {
+	font-weight: 300;
+	font-size: 10px;
+	color: $light;	
+}
+
+//----- Pagination
+
+.pagination:before,
+.pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear:box;
+}
+
+.pagination {
+	text-align: center;
+	a, .previous_page, .current, .next-page {
+		color: $light;
+		font-weight: 300;
+		font-size: 12px;
+		padding: 5px 10px;
+		margin: 3px;
+		border-radius: 0.15em;
+		text-decoration: none;
+		background: transparent;
+		font-style: normal;
+		&:hover {
+			background: $faint;
+		}
+	}
+
+	.current {
+		background: $faint;
+	}
+
+	.disabled {
+		color: $text;
+		&:hover {
+			color: $text;
+			background: white;
+		} 
+	}
+}

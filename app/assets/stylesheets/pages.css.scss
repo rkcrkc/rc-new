@@ -1,0 +1,210 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$red: #FD6B57;
+$faint: #D8E9EF;
+$light: #8283a7;
+$blue: #4ea1d3;
+$dark: #54546c;
+$text: #404146;
+$green: #67D5B5;
+
+$gutter: 30px;
+
+// Navbar stuff
+
+.navbar-default {
+	background-color: transparent;
+}
+
+.navbar-default	.navbar-brand {
+	color: $light;
+	&:hover, &:focus {
+		color: $dark;
+	}	
+}	
+
+.navbar {
+	border: none;
+	margin: 0px;
+
+	.container-fluid {
+		padding: $gutter/2 $gutter;
+	}
+
+	.navbar-nav > li > a {
+		color: $light;
+		&:hover, &:focus {
+			color: $dark;
+		}
+	}
+}
+
+.navbar-collapse {
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-toggle {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+	border: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: $light;
+}
+
+@media (min-width: 768px) {
+	.navbar-toggle {
+		display: none !important;
+	}
+}
+
+
+
+// Home page
+
+.page-content {
+	padding: 0 $gutter/2 $gutter/2 $gutter/2;
+	text-align: center;
+}
+
+.section {
+	margin: 0 auto;	
+	max-width: 800px;
+	text-align: center;		
+}
+
+.hero-container {
+	text-align: center;
+}
+
+.hero-content {
+}
+
+.hero-pic {
+	border-radius: 50%;
+	max-height: 150px;
+	max-width: 150px;
+	border: 1px solid $dark;
+}
+
+.location {
+	text-align: center;
+	padding: 0 $gutter/2;
+
+	h6, p {
+		display: inline-block;
+	}
+
+	h6 {
+		color: $green;
+	}
+
+	p {
+		font-size: 16px;
+		color: $light;
+	}
+
+	.fa {
+		color: $green;
+	}
+}
+
+.intro {
+	h2 {
+		padding: 0 $gutter $gutter/2 $gutter;
+	}
+}
+
+.cv {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cv-pic {
+	border-radius: 50%;
+	max-height: 140px;
+	max-width: 140px;
+}
+
+.thumbnail {
+	border: none;
+	margin-bottom: 0;
+	margin-top: $gutter;
+
+	h5 {
+		margin-top: 0;
+	}
+}
+
+.contact-form {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: left;
+	label h5 {
+		color: $dark;
+		font-size: 16px;
+		margin: 0;
+	}
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 40px;
+	border: 1px solid $light;
+	padding: $gutter/2;
+	margin: $gutter/3 0 $gutter/2 0;
+}
+
+textarea {
+	min-height: 200px;
+}
+
+input[type="submit"] {
+	outline: none;
+	background: $red;
+	border: 1px solid $red;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 9px 12px;
+	&:hover {
+		border-color: #e95743;
+		background: #e95743;
+	}
+}
+
+footer {
+	padding: $gutter/2;
+	margin: $gutter $gutter 0 $gutter;
+	border-top: 1px solid $faint;
+
+	p {
+		font-size: 11px;
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav {
+		float: right;
+		text-decoration: none;
+		
+		a {
+			padding: 5px;
+		}
+
+	}
+}
