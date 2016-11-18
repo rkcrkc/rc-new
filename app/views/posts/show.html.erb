@@ -1,0 +1,35 @@
+<%= render 'posts_header' %>
+
+<div class="posts-container">
+	<div class="title">
+		<p class="date">Thursday November 2016</p>
+		<h2><%= @post.title %></h2>
+
+	<hr>
+
+	</div>
+
+	<div class="posts-content">
+		<%= @post.content %>
+	</div>
+
+	<hr>
+
+	<p><%= link_to "Edit", edit_post_path(@post) %></p>
+	<p><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>	
+
+
+	<div class="share-box">
+		<p>Share ARTICLE</p>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-google-plus"></i></a>
+	</div>
+
+	<hr>
+
+	<p>INSERT DISQUS COMMENTS</p>
+
+</div>
+
+<%= render 'posts_footer' %>

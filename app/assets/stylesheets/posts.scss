@@ -21,7 +21,7 @@ $gutter: 30px;
 	max-width: 800px;
 }
 
-.posts-index {
+.title {
 
 	h4 {
 		color: $dark;
@@ -29,6 +29,12 @@ $gutter: 30px;
 		text-transform: uppercase;
 	}	
 
+}
+
+.date {
+	font-weight: 300;
+	font-size: 10px;
+	color: $light;	
 }
 
 .post {
@@ -54,10 +60,23 @@ $gutter: 30px;
 
 }
 
-.date {
-	font-weight: 300;
-	font-size: 10px;
-	color: $light;	
+.posts-content {
+
+}
+
+.share-box {
+	p {
+
+	}
+
+	i {
+		color: $light;
+		padding: 3px;
+		&:hover {
+			color: $dark;
+			cursor: pointer;
+		}
+	}
 }
 
 //----- Pagination
