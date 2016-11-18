@@ -3,26 +3,24 @@
 <div class="posts-container">
 	<div class="title">
 		<p class="date"><%= @post.created_at.strftime("%A, %d %B %Y") %></p>
-		<h2><%= @post.title %></h2>
+		<h3><%= @post.title %></h3>
 
 	<hr>
 
 	</div>
 
 	<div class="posts-content">
-		<p><%= @post.content %></p>
+		<p><%= markdown @post.content %></p>
 	</div>
 
-	<hr>
+	<br>
 
 	<p><%= link_to "Edit", edit_post_path(@post) %> | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>	
 
-	<br>
-	<br>
-
+	<hr>
 
 	<div class="share-box">
-		<p>Share <em><%= @post.title %></em></p>
+		<h6>Share <em><%= @post.title %></em></h6>
 		<a href="http://twitter.com/share?text=<%= @post.title %> by @ryancrocombe" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
 			<i class="fa fa-twitter" aria-hidden="true"></i>
 		</a>

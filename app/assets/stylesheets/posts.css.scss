@@ -61,7 +61,7 @@ $gutter: 30px;
 }
 
 .posts-content {
-
+	text-align: left;
 }
 
 .posts-form {
@@ -74,13 +74,14 @@ $gutter: 30px;
 }
 
 .share-box {
-	p {
-
+	h6 {
+		text-transform: uppercase;
+		color: $dark;
 	}
 
 	i {
 		color: $light;
-		padding: 3px;
+		padding: 8px 10px;
 		&:hover {
 			color: $dark;
 			cursor: pointer;
