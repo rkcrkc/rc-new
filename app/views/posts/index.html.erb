@@ -7,28 +7,13 @@
 	</div>
 
 	<div class="post">
-		<h6 class="date">Thursday 17th November 2016</h6>
-		<h2><a href="#">Writing a gratefulness log</a></h2>
-		<p>Learn how to write a gratefulness log</p>
+		<% @posts.each do |post| %>
+			<h6 class="date"><%= post.created_at.strftime("%A, %d %B %Y") %></h6>
+			<h2><%= link_to post.title, post %></h2>
+			<p><%= post.description %></p>
+			<hr>
+		<% end %>
 	</div>
-
-	<hr>
-
-	<div class="post">
-		<h6 class="date">Thursday 17th November 2016</h6>
-		<h2><a href="#">Change your life with Google Sites</a></h2>
-		<p>I recently made a site on Google Sites and realised it's awesome!</p>
-	</div>
-
-	<hr>
-
-	<div class="post">
-		<h6 class="date">Thursday 17th November 2016</h6>
-		<h2><a href="#">How to get started meditating</a></h2>
-		<p>It took me a while to get into meditation</p>		
-	</div>
-
-	<hr>
 
 	<div class="pagination">
 		<span class="previous_page disabled">Previous</span>

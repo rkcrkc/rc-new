@@ -19,11 +19,19 @@ $gutter: 30px;
 }
 
 .navbar-default	.navbar-brand {
-	color: $light;
+	color: white;
 	&:hover, &:focus {
-		color: $dark;
+		color: white;
+		background-color: $green;
+		border-radius: 50%;
 	}	
-}	
+}
+
+.navbar-brand {
+	background-color: $light;
+	border-radius: 50%;
+
+}
 
 .navbar {
 	border: none;
@@ -73,7 +81,7 @@ $gutter: 30px;
 // Home page
 
 .page-content {
-	padding: 0 $gutter/2 $gutter/2 $gutter/2;
+	padding: 0 $gutter $gutter $gutter;
 	text-align: center;
 }
 
