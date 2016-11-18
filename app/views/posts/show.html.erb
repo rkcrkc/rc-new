@@ -2,7 +2,7 @@
 
 <div class="posts-container">
 	<div class="title">
-		<p class="date">Thursday November 2016</p>
+		<p class="date"><%= @post.created_at.strftime("%A, %d %B %Y") %></p>
 		<h2><%= @post.title %></h2>
 
 	<hr>
@@ -10,20 +10,25 @@
 	</div>
 
 	<div class="posts-content">
-		<%= @post.content %>
+		<p><%= @post.content %></p>
 	</div>
 
 	<hr>
 
-	<p><%= link_to "Edit", edit_post_path(@post) %></p>
-	<p><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>	
+	<p><%= link_to "Edit", edit_post_path(@post) %> | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>	
+
+	<br>
+	<br>
 
 
 	<div class="share-box">
-		<p>Share ARTICLE</p>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-google-plus"></i></a>
+		<p>Share <em><%= @post.title %></em></p>
+		<a href="http://twitter.com/share?text=<%= @post.title %> by @ryancrocombe" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+		</a>
+		<a href="http://www.facebook.com/sharer.php" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+		</a>
 	</div>
 
 	<hr>

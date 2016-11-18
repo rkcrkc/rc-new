@@ -159,11 +159,12 @@ $gutter: 30px;
 	max-width: 400px;
 	margin: 0 auto;
 	text-align: left;
-	label h5 {
-		color: $dark;
-		font-size: 16px;
-		margin: 0;
-	}
+}
+
+label h5 {
+	color: $dark;
+	font-size: 16px;
+	margin: 0;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
