@@ -60,6 +60,10 @@ $max-width: 720px;
 	a {
 		font-weight: 400;
 		color: $light;
+		transition: color 0.2s linear;
+		-o-transition: color 0.2s linear;
+		-moz-transition: color 0.2s linear;
+		-webkit-transition: color 0.2s linear;	
 		&:hover, &:focus {
 			color: $yellow;
 		}
@@ -99,6 +103,10 @@ $max-width: 720px;
 	i {
 		color: $green;
 		padding: 8px 10px;
+		transition: color 0.2s linear;
+		-o-transition: color 0.2s linear;
+		-moz-transition: color 0.2s linear;
+		-webkit-transition: color 0.2s linear;			
 		&:hover {
 			color: $yellow;
 			cursor: pointer;
@@ -131,6 +139,14 @@ $max-width: 720px;
 		text-decoration: none;
 		background: transparent;
 		font-style: normal;
+		transition: color 0.5s linear;
+		-o-transition: color 0.5s linear;
+		-moz-transition: color 0.5s linear;
+		-webkit-transition: color 0.5s linear;
+		transition: background 0.5s linear;
+		-o-transition: background 0.5s linear;
+		-moz-transition: background 0.5s linear;
+		-webkit-transition: background 0.5s linear;							
 		&:hover {
 			color: white;
 			background: $light;
@@ -147,7 +163,7 @@ $max-width: 720px;
 		font-weight: 300;
 		font-size: 12px;
 		padding: 5px 10px;
-		margin: 3px;		
+		margin: 3px;				
 		&:hover {
 			color: $light-grey;
 			background: $lightest-grey;

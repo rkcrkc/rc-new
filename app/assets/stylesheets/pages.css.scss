@@ -36,6 +36,9 @@ $max-width: 720px;
 	margin: 0 auto;	
 	max-width: $max-width;
 	text-align: center;	
+	h3 {
+		padding-top: 0;
+	}
 }
 
 .title {
@@ -165,13 +168,13 @@ input[type="submit"] {
 // Chinese page
 
 .chinese-container {
-	background-color: $yellow;
+	background-color: $red;
 }
 
 .chinese-section {
 	margin: 0 auto;
 	max-width: $max-width;
-	padding: $gutter;
+	padding: $gutter*4 $gutter $gutter*8 $gutter;
 	text-align: center;
 
 	h1, h2, h3, h4, h5, h6, p {
@@ -191,7 +194,19 @@ input[type="submit"] {
 		border-top: 1px solid $red;
 	}
 
-	p, i {
+	p {
 		color: white;
+	}
+
+	i {
+		color: white;
+		transition: color 0.2s linear;
+		-o-transition: color 0.2s linear;
+		-moz-transition: color 0.2s linear;
+		-webkit-transition: color 0.2s linear;		
+		&:hover, &:focus {
+			color: $yellow;
+		}
+
 	}
 }
