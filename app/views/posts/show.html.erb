@@ -15,7 +15,9 @@
 
 	<br>
 
-	<p><%= link_to "Edit", edit_post_path(@post), class: "purple" %> | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" }, class: "purple" %></p>	
+	<% if user_signed_in? %>
+		<p><%= link_to "Edit", edit_post_path(@post), class: "purple" %> | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" }, class: "purple" %></p>
+	<% end %>
 
 	<hr>
 

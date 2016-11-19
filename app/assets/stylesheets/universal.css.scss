@@ -31,6 +31,14 @@ $gutter: 30px;
 	clear: both;
 }
 
+.notice, .alert {
+	text-align: center;
+	padding: $gutter/2;
+	background-color: $mid-grey;
+	color: white;
+	margin: 0;
+}
+
 h1 {
 	color: white;
 	font-weight: 400;
