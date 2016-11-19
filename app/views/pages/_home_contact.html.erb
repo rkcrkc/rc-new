@@ -7,25 +7,32 @@
     </div>
 
 	<div class="contact-form">
-	    <label><h5>Name</h5></label>
-	    <br>
-		<input type="text">
+		<%= form_for @contact do |f| %>
+			<%= f.label :name %>
+			<br>
+			<%= f.text_field :name, required: true %>
 
-		<br>
+			<br>
 
-		<label><h5>Email</h5></label>
-		<br>
-		<input type="text">
+			<%= f.label :email %>
+			<br>
+			<%= f.email_field :email, required: true %>			
 
-		<br>
+			<br>
 
-		<label><h5>Message</h5></label>
-		<br>
-		<textarea name="" id="" cols="30" rows="10"></textarea>
+			<%= f.label :message %>
+			<br>
+			<%= f.text_area :message, as: :text %>
 
-		<br>
+			<div class="hidden">
+				<%= f.label :nickname %>
+				<br>
+				<%= f.email_field :nickname, hint: 'Leave this field blank' %>	
+			</div>
 
-		<input type="submit" value="Send Message" class="button">
+			<%= f.submit 'Send Message', class: "button" %>
+
+		<% end %>
 	</div>
 
 </div>

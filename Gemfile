@@ -15,6 +15,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'friendly_id', '~> 5.1.0'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 group :doc do
 	gem 'sdoc', '~> 0.4.0', group: :doc
