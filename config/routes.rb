@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root "pages#home"
 
+  get 'chinese' => 'pages#chinese'
+  get 'now' => 'pages#now'
+
   get 'concepts/index'
 
   get 'posts/index'

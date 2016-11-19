@@ -3,7 +3,7 @@
 <div class="posts-container">
 
 	<div class="title">
-		<h4>Articles</h4>
+		<h3>Articles</h3>
 	</div>
 
 	<% @posts.each do |post| %>
@@ -11,9 +11,11 @@
 			<h6 class="date"><%= post.created_at.strftime("%A, %d %B %Y") %></h6>
 			<h2><%= link_to post.title, post %></h2>
 			<p><%= post.description %></p>
-			<hr>
 		</div>
+
+		<hr>	
 	<% end %>
+
 
 
 	<div class="pagination">

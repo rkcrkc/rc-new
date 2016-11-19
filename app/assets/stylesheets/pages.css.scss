@@ -20,72 +20,7 @@ $light: #8283a7;
 $faint: #D8E9EF;
 
 $gutter: 30px;
-
-// Navbar stuff
-
-.navbar-default {
-	background-color: transparent;
-}
-
-.navbar-default	.navbar-brand {
-	color: white;
-	&:hover, &:focus {
-		color: white;
-		background-color: $green;
-		border-radius: 50%;
-	}	
-}
-
-.navbar-brand {
-	background-color: $light;
-	border-radius: 50%;
-
-}
-
-.navbar {
-	border: none;
-	margin: 0px;
-
-	.container-fluid {
-		padding: $gutter/2 $gutter;
-	}
-
-	.navbar-nav > li > a {
-		font-family: "Helvetica Neue";
-		font-size: 12px;
-		color: white;
-		&:hover, &:focus {
-			color: $light;
-		}
-	}
-}
-
-.navbar-collapse {
-	border: none;
-	box-shadow: none;
-}
-
-.navbar-toggle {
-	background-color: transparent;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: transparent;
-}
-
-.navbar-default .navbar-toggle {
-	border: white;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: white;
-}
-
-@media (min-width: 768px) {
-	.navbar-toggle {
-		display: none !important;
-	}
-}
+$max-width: 720px;
 
 
 
@@ -99,12 +34,13 @@ $gutter: 30px;
 
 .section {
 	margin: 0 auto;	
-	max-width: 690px;
+	max-width: $max-width;
 	text-align: center;	
 }
 
 .title {
-	padding: 0 $gutter $gutter $gutter;	
+	padding: 0 $gutter $gutter $gutter;
+	max-width: $max-width;	
 }
 
 .section-text {
@@ -226,25 +162,36 @@ input[type="submit"] {
 	}
 }
 
-footer {
-	padding: $gutter;
-	border-top: 1px solid white;
-	background-color: $lightest-grey;
+// Chinese page
 
-	p {
-		font-size: 11px;
-		display: inline;
-		padding: 0;
-		margin: 0;
+.chinese-container {
+	background-color: $yellow;
+}
+
+.chinese-section {
+	margin: 0 auto;
+	max-width: $max-width;
+	padding: $gutter;
+	text-align: center;
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: white;		
 	}
 
-	nav {
-		float: right;
-		text-decoration: none;
-		
-		a {
-			padding: 5px;
-		}
+}
 
+.chinese-header {
+	
+}
+
+.chinese-footer {
+
+	footer {
+		background-color: $red;
+		border-top: 1px solid $red;
+	}
+
+	p, i {
+		color: white;
 	}
 }

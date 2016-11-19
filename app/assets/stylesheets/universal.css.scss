@@ -119,6 +119,101 @@ hr {
 	margin: 4rem auto;	
 }
 
+// Navbar stuff
+
+.navbar-default {
+	background-color: $red;
+}
+
+.navbar-default	.navbar-brand {
+	color: white;
+	&:hover, &:focus {
+		color: white;
+		background-color: $green;
+		border-radius: 50%;
+	}	
+}
+
+.navbar-brand {
+	background-color: $light;
+	border-radius: 50%;
+
+}
+
+.navbar {
+	border: none;
+	margin: 0px;
+	text-align: center;
+
+	@media (min-width: 768px) {
+		border-radius: 0;
+	}
+
+	.container-fluid {
+		padding: $gutter/2 $gutter;
+	}
+
+	.navbar-nav > li > a {
+		font-family: "Helvetica Neue";
+		font-size: 12px;
+		color: white;
+		&:hover, &:focus {
+			color: $light;
+		}
+	}	
+}
+
+.navbar-collapse {
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-toggle {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+	border: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+@media (min-width: 768px) {
+	.navbar-toggle {
+		display: none !important;
+	}
+}
+
+footer {
+	padding: $gutter;
+	border-top: 1px solid white;
+	background-color: $lightest-grey;
+
+	p {
+		font-size: 11px;
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav {
+		float: right;
+		text-decoration: none;
+		
+		a {
+			padding: 5px;
+		}
+
+	}
+}
+
+
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
