@@ -7,13 +7,23 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-$red: #FD6B57;
-$faint: #D8E9EF;
-$light: #8283a7;
-$blue: #4ea1d3;
+
+$dark-grey: #455A64;
+$mid-grey: #607D8B;
+$light-grey: #CFD8DC;
+$lightest-grey: #EDEDED;
+
+$red: #FD6A57;
+$yellow: #FDA957;
+$blue: #398A9D;
+$green: #41BD62;
+
+$text-1: #404146;
+$text-2: #757575;
+
 $dark: #54546c;
-$green: #67D5B5;
-$text: #404146;
+$light: #8283a7;
+$faint: #D8E9EF;
 
 $gutter: 30px;
 
@@ -22,21 +32,22 @@ $gutter: 30px;
 }
 
 h1 {
-	color: $dark;
+	color: white;
 	font-weight: 400;
 }
 
 h2 {
-	color: $dark;
+	color: $light;
 	font-weight: 400;
 }
 
 h3 {
-	color: $dark;
+	color: $green;
+	margin: 0;
 }
 
 h5 {
-	color: $light;
+	color: $yellow;
 	font-size: 18px;
 	font-weight: 400;
 	padding-top: $gutter/2;
@@ -48,27 +59,65 @@ h6 {
 
 p {
 	font-family: "Helvetica Neue";
-	color: $text;
+	color: $text-1;
 	font-weight: 300;
+	line-height: 1.5;
 }
 
 a {
+	color: $yellow;
+	font-weight: 300;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $green;
+	}
+}
+
+.a2 {
 	color: $light;
 	font-weight: 300;
 	&:hover, &:focus {
 		text-decoration: none;
-		color: $dark;
+		color: $red;
 	}
+}
+
+.a3 {
+	color: $red;
+	font-weight: 300;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $light;
+	}	
+}
+
+.purple {
+	color: $light;
+}
+
+.red {
+	color: $red;
+}
+
+.yellow {
+	color: $yellow;
+}
+
+.blue {
+	color: $blue;
+}
+
+.white {
+	color: white;
 }
 
 hr {
 	width: 3em;
 	display: block;
 	border: 0;
-	border-top: 5px solid $green;
+	border-top: 5px solid $red;
 	margin: 4rem auto;	
 }
-
 
 /* Box Model Hack */
 * {
