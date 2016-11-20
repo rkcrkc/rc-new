@@ -72,7 +72,7 @@ $max-width: 720px;
 }
 
 .posts-content {
-	margin: 0 auto;
+	margin: $gutter auto 0 auto;
 	max-width: $max-width;
 	padding: $gutter;
 	text-align: left;
@@ -95,11 +95,7 @@ $max-width: 720px;
 	max-width: $max-width;
 
 	h6 {
-		text-transform: uppercase;
-		color: $green;
-		em {
-			color: $light;
-		}
+		color: $light;
 	}
 
 	i {
