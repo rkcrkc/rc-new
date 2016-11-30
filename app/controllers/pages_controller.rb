@@ -5,6 +5,12 @@ class PagesController < ApplicationController
   def chinese
   end
 
+  def xmas
+  end
+
+  def candidasa
+  end
+
   def now
   end
 

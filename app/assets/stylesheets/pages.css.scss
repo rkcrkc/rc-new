@@ -214,3 +214,60 @@ input[type="submit"] {
 
 	}
 }
+
+// Xmas page
+
+.xmas-container {
+	padding: 0 $gutter;
+	text-align: center;
+	background-color: $green;
+	min-height: 600px;
+	margin-bottom: 0;
+	
+	.section-title {
+		margin: 0;
+		padding-top: $gutter;
+		padding-bottom: 10px;
+		font-family: 'Bungee', cursive;
+		font-size: 48px;		
+	}
+
+	.section-text {
+		margin-top: $gutter*1.5;
+		background-color: rgba(0,0,0,0.1);
+
+		p {
+			font-family: 'Coming Soon', cursive;
+		}
+
+		h2, h3, h4, h5, h6, p {
+			color: white;
+		}
+	}
+
+}
+
+.xmas-banner-container {
+	background-color: $green;
+	padding-bottom: $gutter;
+}
+
+.xmas-banner {
+	background: url("xmas.png");
+	background-size: auto 100px;
+	background-repeat: repeat-x;
+	height: 100px;	
+}
+
+.xmas-button {
+	margin: $gutter;
+	padding: $gutter/2;
+	background: $red;
+	font-family: 'Bungee', cursive;
+	color: white;
+	border-radius: 4px; 
+	display: inline-block;
+	&:hover {
+		background: $yellow;
+	}
+}

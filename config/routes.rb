@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'chinese' => 'pages#chinese'
   get 'now' => 'pages#now'
+  get 'xmas' => 'pages#xmas'
+  get 'candidasa' => 'pages#candisasa'
 
   get 'concepts/index'
 
