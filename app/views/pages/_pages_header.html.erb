@@ -17,6 +17,7 @@
         <li><%= link_to "Blog", posts_path %></li>
         <li><%= link_to "Learn Chinese", chinese_path %></li>
         <% if user_signed_in? %>
+          <li><%= link_to "若琼, click here", chinese_path %></li>        
           <li>
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
           </li>

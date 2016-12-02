@@ -5,6 +5,18 @@ Rails.application.routes.draw do
   get 'chinese' => 'pages#chinese'
   get 'now' => 'pages#now'
   get 'xmas' => 'pages#xmas'
+    get 'xmas_q1' => 'pages#xmas_q1'
+    get 'xmas_q2' => 'pages#xmas_q2'
+    get 'xmas_q3' => 'pages#xmas_q3'
+    get 'xmas_q4' => 'pages#xmas_q4'
+    get 'xmas_q5' => 'pages#xmas_q5'
+    get 'xmas_q6' => 'pages#xmas_q6'
+    get 'xmas_q7' => 'pages#xmas_q7'
+    get 'xmas_q8' => 'pages#xmas_q8'
+    get 'xmas_q9' => 'pages#xmas_q9'
+    get 'xmas_q10' => 'pages#xmas_q10'
+    get 'xmas_password' => 'pages#xmas_password'    
+
   get 'candidasa' => 'pages#candisasa'
 
   get 'concepts/index'

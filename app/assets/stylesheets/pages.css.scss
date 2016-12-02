@@ -221,9 +221,8 @@ input[type="submit"] {
 	padding: 0 $gutter;
 	text-align: center;
 	background-color: $green;
-	min-height: 600px;
 	margin-bottom: 0;
-	
+	min-height: 400px;
 	.section-title {
 		margin: 0;
 		padding-top: $gutter;
@@ -238,6 +237,12 @@ input[type="submit"] {
 
 		p {
 			font-family: 'Coming Soon', cursive;
+			font-size: 18px;
+		}
+
+		h4 {
+			font-family: 'Bungee', cursive;
+			font-size: 24px;		
 		}
 
 		h2, h3, h4, h5, h6, p {
@@ -249,7 +254,7 @@ input[type="submit"] {
 
 .xmas-banner-container {
 	background-color: $green;
-	padding-bottom: $gutter;
+	padding: $gutter 0;
 }
 
 .xmas-banner {
@@ -269,5 +274,18 @@ input[type="submit"] {
 	display: inline-block;
 	&:hover {
 		background: $yellow;
+	}
+}
+
+.xmas-button-2 {
+	margin: $gutter;
+	padding: $gutter/2;
+	background: $red;
+	font-family: 'Bungee', cursive;
+	color: white;
+	border-radius: 4px; 
+	display: inline-block;
+	&:hover {
+		background: $light;
 	}
 }
