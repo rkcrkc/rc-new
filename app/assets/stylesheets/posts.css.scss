@@ -78,6 +78,61 @@ $max-width: 720px;
 	text-align: left;
 	background-color: white;
 	border-radius: 10px;
+
+	h1 {
+		color: $green;
+		font-size: 30px;
+	}
+
+	h2 {
+		padding-top: $gutter;
+		color: $yellow;
+		font-size: 24px;
+		padding-bottom: $gutter;
+		margin: 0;
+	}
+
+	h3 {
+		color: $light;
+		font-size: 18px;
+		padding-bottom: $gutter/2;
+	}
+
+	h4 {
+		color: $light;
+		font-size: 14px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 1.5;
+		margin-top: $gutter;
+	}
+
+	p {
+		color: $dark-grey;
+		margin-bottom: $gutter/2;
+	}
+
+	strong {
+		font-weight: 400;
+	}
+
+	blockquote {
+		font-size: inherit;
+	}
+
+	ul {
+		padding-left: inherit;
+
+		li {
+			padding-left: $gutter/2;
+		}
+	}
+
+	img {
+		max-width: 100%;
+		padding-top: $gutter;
+		padding-bottom: $gutter;		
+	}
 }
 
 .posts-form {
