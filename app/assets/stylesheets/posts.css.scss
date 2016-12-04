@@ -130,8 +130,7 @@ $max-width: 720px;
 
 	img {
 		max-width: 100%;
-		padding-top: $gutter;
-		padding-bottom: $gutter;		
+		padding: $gutter $gutter/2;
 	}
 }
 
