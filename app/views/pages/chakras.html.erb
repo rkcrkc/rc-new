@@ -1,0 +1,58 @@
+<div class="logged-in-container">
+	<div class="xmas-banner-container">
+		<div class="xmas-banner">
+		</div>
+	</div>
+
+	<div class="xmas-container">
+		<div class="logged-in">
+			<div class="section">
+				<% if user_signed_in? %>
+					<h1 class="section-title">Chakras</h1>
+
+					<div class="section-text">
+						<div class="xmas-info-text">
+							<p>Chakras are energy centres in the body through which universal energy flows in and out of a person. There are 7 main chakras, with each chakra located at a different point in the body such that it correlates to specific facets of your being.</p>
+							<p>Physical, mental and emotional issues are all associated with chakra imbalance. Physical issues lead to weakness in emotional behaviour, while holding on to certain fears and emotions can cause physical restrictions, too.</p>
+							<p>Releasing stale energy from the body through the appropriate chakra can undo both physical and emotional tightness or malfunction.</p>
+							<p>When our chakras are perfectly aligned with the universal flow of energy, every aspect of our life becomes harmonious and joyful. We reclaim perfect health, and our love and passion for life becomes renewed. <em>(Sounds good to me :p)</em></p>
+
+							<%= image_tag "Asset 5.png", class: "chakra-image" %>
+
+							<h2 style="color:#e12421;">Root</h2>
+							<p>The Root chakra is your right to exist! This energy is found in the base of your spine. This chakra deals with your survival - your right to be here. So it involves materials related to the physical world like food, water, sex, shelter, and your ability to stand up for yourself. When this doesn't happen it looks like fatigue, depression, back pain, catching colds, or having cold extremities often.</p>
+
+							<h2 style="color:#eb6d22;">Sacral</h2>
+							<p>The Sacral chakra deals with your right to feel! Situated below the navel, the lower abdomen. This energy is connected to your tangible senses and how you feel. This energy relates to your ability to be social and an intimacy. Out of balance appear as drug abuse, eating disorders, candida, and yeast infections. Asthma and allergies. Low back pain urinary issues. Impotency and frigidity in your love life as well as general sensuality issues.</p>
+
+							<h2 style="color:#f5b92b;">Solar plexus</h2>
+							<p>The Sacral chakra deals with your right to feel! Situated below the navel, the lower abdomen. This energy is connected to your tangible senses and how you feel. This energy relates to your ability to be social and an intimacy. Out of balance appear as drug abuse, eating disorders, candida, and yeast infections. Asthma and allergies. Low back pain urinary issues. Impotency and frigidity in your love life as well as general sensuality issues.</p>	
+
+							<h2 style="color:#42a93c;">Heart</h2>
+							<p>The Sacral chakra deals with your right to feel! Situated below the navel, the lower abdomen. This energy is connected to your tangible senses and how you feel. This energy relates to your ability to be social and an intimacy. Out of balance appear as drug abuse, eating disorders, candida, and yeast infections. Asthma and allergies. Low back pain urinary issues. Impotency and frigidity in your love life as well as general sensuality issues.</p>	
+
+							<h2 style="color:#3abce7;">Throat</h2>
+							<p>The Throat chakra is your right to speak! Signs of balance are expressing yourself and your beliefs, truthfully. The ability to trust and have loyalty. Imbalance in this energy appears as fevers, flus, and hyperactivity. Problems with your mouth, tongue and jaw. Along with hormonal problems such as mood swings, PMS, menopause and bloating.</p>																			
+
+						</div>
+
+					</div>
+
+					<%= link_to "Next", "stones", class: "xmas-button" %>
+				
+				<% else %>
+					<h1 class="section-title">Access denied</h1>
+
+					<div class="section-text">
+						<p>You need to be logged in to view this page</p>
+					</div>		
+				<% end %>
+			</div>
+		</div>
+	</div>
+
+	<div class="xmas-banner-container">
+		<div class="xmas-banner">
+		</div>
+	</div>
+</div>

@@ -15,9 +15,13 @@ Rails.application.routes.draw do
     get 'xmas_q8' => 'pages#xmas_q8'
     get 'xmas_q9' => 'pages#xmas_q9'
     get 'xmas_q10' => 'pages#xmas_q10'
-    get 'xmas_password' => 'pages#xmas_password'    
+    get 'password' => 'pages#password'    
 
-  get 'candidasa' => 'pages#candisasa'
+  get 'candidasa' => 'pages#candidasa'
+    get 'crystals' => 'pages#crystals'
+    get 'chakras' => 'pages#chakras'
+    get 'stones' => 'pages#stones'
+    get 'present' => 'pages#present'
 
   get 'concepts/index'
 

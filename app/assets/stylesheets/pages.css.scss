@@ -18,6 +18,7 @@ $text-2: #757575;
 $dark: #54546c;
 $light: #8283a7;
 $faint: #D8E9EF;
+$light-blue: #aecbe6;
 
 $gutter: 30px;
 $max-width: 720px;
@@ -228,7 +229,7 @@ input[type="submit"] {
 		padding-top: $gutter;
 		padding-bottom: 10px;
 		font-family: 'Bungee', cursive;
-		font-size: 48px;		
+		font-size: 48px;
 	}
 
 	.section-text {
@@ -236,17 +237,32 @@ input[type="submit"] {
 		background-color: rgba(0,0,0,0.1);
 
 		p {
-			font-family: 'Coming Soon', cursive;
-			font-size: 18px;
+			font-family: 'Itim', cursive;
+			font-size: 20px;
+			color: white;
 		}
 
 		h4 {
 			font-family: 'Bungee', cursive;
-			font-size: 24px;		
+			font-size: 24px;
 		}
 
-		h2, h3, h4, h5, h6, p {
+		h2, h3, h4, h5, h6 {
+			font-family: 'Bungee', cursive;
 			color: white;
+		}
+
+		h2 {
+			padding-top: $gutter;
+		}
+
+		hr {
+			border-color: $red;			
+		}
+
+		.xmas-info-text p {
+			font-size: 18px;
+			padding-top: 10px;
 		}
 	}
 
@@ -288,4 +304,15 @@ input[type="submit"] {
 	&:hover {
 		background: $light;
 	}
+}
+
+.logged-in-container {
+	.xmas-container, .xmas-banner-container {
+		background-color: $light;
+	}
+}
+
+.chakra-image {
+	max-width: 350px;
+	margin: $gutter	
 }
