@@ -228,7 +228,7 @@ input[type="submit"] {
 		margin: 0;
 		padding-top: $gutter;
 		padding-bottom: 10px;
-		font-family: 'Lora', serif;
+		font-family: 'Dancing Script', cursive;
 		font-size: 48px;
 	}
 
@@ -237,18 +237,13 @@ input[type="submit"] {
 		background-color: rgba(0,0,0,0.1);
 
 		p {
-			font-family: 'Bad Script', cursive;
+			font-family: 'Lora', serif;
 			font-size: 16px;
 			color: white;
 		}
 
-		h4 {
-			font-family: 'Lora', serif;
-			font-size: 24px;
-		}
-
-		h2, h3, h4, h5, h6 {
-			font-family: 'Lora', serif;
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Dancing Script', cursive;
 			color: white;
 		}
 
@@ -273,7 +268,6 @@ input[type="submit"] {
 
 			h5 {
 				font-style: italic;
-				font-size: 16px;
 			}
 
 			.panel {
@@ -315,9 +309,10 @@ input[type="submit"] {
 
 .xmas-button {
 	margin: $gutter;
-	padding: $gutter/2;
+	padding: $gutter/2 $gutter;
 	background: $red;
-	font-family: 'Lora', serif;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;	
 	color: white;
 	border-radius: 4px; 
 	display: inline-block;
@@ -328,9 +323,10 @@ input[type="submit"] {
 
 .xmas-button-2 {
 	margin: $gutter;
-	padding: $gutter/2;
+	padding: $gutter/2 $gutter;
 	background: $red;
-	font-family: 'Lora', serif;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
 	color: white;
 	border-radius: 4px; 
 	display: inline-block;
@@ -347,5 +343,5 @@ input[type="submit"] {
 
 .chakra-image {
 	max-width: 350px;
-	margin: $gutter	
+	margin: $gutter $gutter $gutter/2 $gutter;
 }

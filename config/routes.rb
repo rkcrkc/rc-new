@@ -18,7 +18,6 @@ Rails.application.routes.draw do
     get 'password' => 'pages#password'    
 
   get 'candidasa' => 'pages#candidasa'
-    get 'crystals' => 'pages#crystals'
     get 'chakras' => 'pages#chakras'
     get 'stones' => 'pages#stones'
     get 'present' => 'pages#present'
