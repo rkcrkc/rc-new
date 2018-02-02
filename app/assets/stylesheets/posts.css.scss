@@ -107,10 +107,16 @@ $max-width: 720px;
 		margin-top: $gutter;
 	}
 
+	h5 {
+		color: $red;
+	}
+
 	h6 {
 		color: $light-grey;
 		font-size: 11px;
-		padding-top: -$gutter;
+		padding-top: -30px;
+		text-align: center;
+		padding-bottom: $gutter;
 	}
 
 	p {
