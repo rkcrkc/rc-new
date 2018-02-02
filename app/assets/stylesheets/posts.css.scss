@@ -26,7 +26,7 @@ $max-width: 720px;
 	text-align: center;
 	margin: 0 auto;	
 	background-color: $lightest-grey;
-	padding: $gutter;
+	padding: $gutter;	
 }
 
 .title {
@@ -68,6 +68,10 @@ $max-width: 720px;
 			color: $yellow;
 		}
 	}
+
+	-moz-box-shadow: 2px 3px 2px 0 #d5d5d5;
+	-webkit-box-shadow: 2px 3px 2px 0 #d5d5d5;
+	box-shadow: 2px 2px 3px 0 #d5d5d5;		
 
 }
 
@@ -244,4 +248,18 @@ $max-width: 720px;
 	margin: 0 auto;
 	max-width: $max-width;
 	padding: $gutter;
+}
+
+//------- MailChimp Posts
+
+.posts-container {
+	
+	.subscribe-container {
+		padding: $gutter*1.5;
+
+		-moz-box-shadow: 2px 3px 2px 0 #d5d5d5;
+		-webkit-box-shadow: 2px 3px 2px 0 #d5d5d5;
+		box-shadow: 2px 2px 3px 0 #d5d5d5;	
+	}
+
 }
