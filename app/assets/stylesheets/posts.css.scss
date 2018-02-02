@@ -42,7 +42,8 @@ $max-width: 720px;
 .date {
 	font-weight: 300;
 	font-size: 11px;
-	color: $light;	
+	color: $light;
+	padding-top: $gutter;
 }
 
 .post {
@@ -108,11 +109,12 @@ $max-width: 720px;
 	}
 
 	h5 {
-		color: $red;
+		color: $yellow;
+		margin-bottom: $gutter/2;
 	}
 
 	h6 {
-		color: $mid-grey;
+		color: $light-grey;
 		font-size: 11px;
 		margin-top: -30px;
 		text-align: center;
