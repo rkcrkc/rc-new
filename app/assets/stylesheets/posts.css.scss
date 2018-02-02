@@ -112,7 +112,7 @@ $max-width: 720px;
 	}
 
 	h6 {
-		color: $light-grey;
+		color: $mid-grey;
 		font-size: 11px;
 		margin-top: -30px;
 		text-align: center;
@@ -129,7 +129,9 @@ $max-width: 720px;
 	}
 
 	blockquote {
-		font-size: inherit;
+		font-style: italic;
+		color: $dark-grey;
+		font-weight: 400;
 	}
 
 	ul {
