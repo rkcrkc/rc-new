@@ -14,4 +14,7 @@ class PagesController < ApplicationController
   def now
   end
 
+  def blockchain
+  end
+
 end

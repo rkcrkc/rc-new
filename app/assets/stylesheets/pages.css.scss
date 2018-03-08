@@ -9,19 +9,20 @@ $lightest-grey: #EDEDED;
 
 $red: #FD6A57;
 $yellow: #FDA957;
-$blue: #398A9D;
+$blue: #006293;
 $green: #41BD62;
 
 $text-1: #212121;
 $text-2: #757575;
 
 $dark: #54546c;
+$mid: #676ba5;
 $light: #8283a7;
 $faint: #D8E9EF;
 $light-blue: #aecbe6;
 
 $gutter: 30px;
-$max-width: 720px;
+$max-width: 800px;
 
 
 
@@ -101,6 +102,18 @@ $max-width: 720px;
 
 .intro {
 
+	h2 {
+		@media (max-width: 400px) {
+			font-size: 24px;	
+		}
+	}
+
+}
+
+.themes {
+	h5 {
+		font-weight: 400;
+	}
 }
 
 .cv {
@@ -476,4 +489,32 @@ input[type="submit"] {
 .chakra-image {
 	max-width: 350px;
 	margin: $gutter $gutter $gutter/2 $gutter;
+}
+
+
+// Blockchain pages
+
+.blockchain-container {
+	background: $red;
+	padding: $gutter;
+	min-height: 800px;
+
+	h1, h2, h3, h4, h5, h6, p, a {
+		color: white;
+	}
+
+	h2 {
+		font-weight: 400;
+		text-decoration: underline;
+	}
+
+	h3 {
+		font-style: italic;
+	}
+
+	a {
+		&:hover {
+			color: $yellow;
+		}
+	}
 }

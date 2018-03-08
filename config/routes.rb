@@ -22,6 +22,8 @@ Rails.application.routes.draw do
     get 'stones' => 'pages#stones'
     get 'present' => 'pages#present'
 
+  get 'blockchain' => 'pages#blockchain'
+
   get 'concepts/index'
 
   get 'posts/index'
