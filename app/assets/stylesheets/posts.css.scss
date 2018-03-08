@@ -76,6 +76,14 @@ $max-width: 800px;
 		}
 	}
 
+	@media (max-width: 500px) {
+
+
+		h2 {
+		font-size: 25px;	
+		}
+	}
+
 	-moz-box-shadow: 2px 3px 2px 0 #d5d5d5;
 	-webkit-box-shadow: 2px 3px 2px 0 #d5d5d5;
 	box-shadow: 2px 2px 3px 0 #d5d5d5;		
@@ -93,6 +101,7 @@ $max-width: 800px;
 	h1 {
 		color: $green;
 		font-size: 30px;
+		line-height: 1.2;
 	}
 
 	h2 {
