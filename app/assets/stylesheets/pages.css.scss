@@ -32,6 +32,11 @@ $max-width: 800px;
 	padding: $gutter;
 	text-align: center;
 	background-color: $lightest-grey;
+
+	@media (max-width: 400px) {
+		padding-left: $gutter * 0.5;
+		padding-right: $gutter * 0.5;
+	}	
 }
 
 .section {
@@ -101,9 +106,7 @@ $max-width: 800px;
 }
 
 .intro {
-
 	@media (max-width: 400px) {
-
 		.title {
 			padding: $gutter 0;
 		}
@@ -111,9 +114,6 @@ $max-width: 800px;
 		h2 {
 		font-size: 25px;	
 		}
-
-
-
 	}
 
 }
