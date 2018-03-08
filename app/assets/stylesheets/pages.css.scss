@@ -33,7 +33,7 @@ $max-width: 800px;
 	text-align: center;
 	background-color: $lightest-grey;
 
-	@media (max-width: 400px) {
+	@media (max-width: 500px) {
 		padding-left: $gutter * 0.5;
 		padding-right: $gutter * 0.5;
 	}	
@@ -106,7 +106,7 @@ $max-width: 800px;
 }
 
 .intro {
-	@media (max-width: 400px) {
+	@media (max-width: 500px) {
 		.title {
 			padding: $gutter 0;
 		}
